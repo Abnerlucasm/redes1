@@ -145,7 +145,7 @@ Tudo precisa de IP para se comunicar.
 > 
 > **ID Rede |  ID Host**
 `192     .  168     [...]`
-> ---
+> 
 >
 >**Classe A**: R (126). H (256). H (256). H (256) = **001-126** = 16,77 (256 H x 256 H x 256 H - 1 R) milhões de máquinas na rede
 > **Classe B**: R (064). R (256). H (256). H (256) = **128-191** = 65,534 (256 H x 256 H - 2 R) máquinas na rede
@@ -155,31 +155,31 @@ Tudo precisa de IP para se comunicar.
 > **Legenda:**
 > R = Rede, quantas redes
 > H = Host, quantas máquinas dentro da rede
+
+
+>[!IMPORTANT] Na rede local o IP fica sem classe, ou seja não roteavel.
+
+>[!TIP]
+> **Roteador**: gerencia os IP não roteável
+> **Roteador de Borda**: gerencia os IP Roteáveis na rede WAN, dita as rotas na rede
+> **Roteamento NAT**: converte o IP não roteavel para roteavel, ou seja o roteador passa a visualizar os IP da rede interna e encaminha a requisição da rede interna para a rede externa.
 >
->>[!IMPORTANT] Na rede local o IP fica sem classe, ou seja não roteavel.
->
-> ---
-> >[!TIP]
->> **Roteador**: gerencia os IP não roteável
->> **Roteador de Borda**: gerencia os IP Roteáveis na rede WAN, dita as rotas na rede
->> **Roteamento NAT**: converte o IP não roteavel para roteavel, ou seja o roteador passa a visualizar os IP da rede interna e encaminha a requisição da rede interna para a rede externa.
->>
->>**IP:** Identidade na rede local
->>**Máscara**: Forma da Identidade na rede local
->>**Gateway**: Porta de acesso a rede global (WAN)
->> **Gateway Padrão**: encaminha pacotes / faz o caminho entre a rede interna e rede externa para o NAT
->> **Endereço de LoopBack**: Localhost, de mim para mim mesmo
->> **Network Number**: Identifica a rede, é o 0-255 dos hosts na máscara da rede
->> **Endereço Broadcast**: Comunica todos os hosts da rede pois representa todos os endereços da rede. Exemplo: 200.100.10.255
->> ---
->>> [!IMPORTANT] 
->>> Exemplos
->>>- **Endereço de Rede** -> 122.0.0.0
->>>- **Endereço Broadcast** -> 122.255.255.255
->>>- **Gateway End. Rede** ->122.0.0.1
->>>- **Gateway End. Broadcast** -> 122.255.255.254
-> ---
->>[!NOTE]
->> OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
+>**IP:** Identidade na rede local
+>**Máscara**: Forma da Identidade na rede local
+>**Gateway**: Porta de acesso a rede global (WAN)
+> **Gateway Padrão**: encaminha pacotes / faz o caminho entre a rede interna e rede externa para o NAT
+> **Endereço de LoopBack**: Localhost, de mim para mim mesmo
+> **Network Number**: Identifica a rede, é o 0-255 dos hosts na máscara da rede
+> **Endereço Broadcast**: Comunica todos os hosts da rede pois representa todos os endereços da rede. Exemplo: 200.100.10.255
+
+
+> [!IMPORTANT]  Exemplos
+>- **Endereço de Rede** -> 122.0.0.0
+>- **Endereço Broadcast** -> 122.255.255.255
+>- **Gateway End. Rede** ->122.0.0.1
+>- **Gateway End. Broadcast** -> 122.255.255.254
+
+
+>[!NOTE] OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
 >
 	
