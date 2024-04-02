@@ -52,6 +52,7 @@ Informar como está o rack na sala de equipamentos
 > - **Man** = rede distribuida por uma cidade/metropoles
 > - **Lan** = rede local
 
+---
 
 >[!NOTE] 
 >## Comutações
@@ -59,6 +60,7 @@ Informar como está o rack na sala de equipamentos
 >
 >- **Comutação de pacotes**: é dividido a mensagem em pacotes menores e enviada por diversos caminhos diferentes
 
+---
 
 > [!NOTE]
 >  ## Linhas de Comunicação
@@ -66,15 +68,20 @@ Informar como está o rack na sala de equipamentos
 >- Half-duplex= a comunicação é feita dos dois sentidos, mas um de cada vez
 >- Full-duplex= a comunicação é feita nos dois sentidos ao mesmo tempo
 
+---
+
 > [!WARNING]
 >  **Comunicação/enlance = nó (recebe/envia)**
 
+---
 
 >[!TIP] 
 >## Topologias
 >- **Anel**: todas as estações estão conectadas em um caminho fechado. 
 > - **Barramento**: as estações são conectadas em t por um caminho fechado.
 Topologia lógica é quem organiza, sem considerar a parte física. Quando não há login, ou seja, ninguem é cliente ou servidor a topologia é barramento.
+
+---
 
 > [!NOTE]
 >  ## MEIOS DE TRANSMISSÂO
@@ -100,6 +107,7 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 >**Tipo de Fibra Monomodo:** alta complexidade de manipulalçao, nucleo finissimo, média e longa distância.
 >
 
+---
 
 >[!NOTE]
 >### **VANTAGENS X DESVANTAGENS**
@@ -115,6 +123,7 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 >• Quebra com facilidade
 >• Difícil de ser remendado
 
+---
 
 >[!IMPORTANT]
 >**HUB  =** repetidor, ponto de conexão fisica dos equipamentos da rede, retransmite o que recebe aos disp. Conectados a ele, espelho,
@@ -133,6 +142,8 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 >Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso 
 
 
+---
+
 >[!NOTE]
 >## IP
 >
@@ -144,11 +155,13 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 >
 >Existe diferença entre IP Externo (177.43.22.209) e IP Local (192.168.0.1), externo é a forma como outras redes vão visualizar as requisições. Interno é utilizado para se comunicar na rede LAN e não fica visível na rede externa. Quando o IP local faz uma requisição na WAN a mesma é feita em cima do IP Externo.
 
+---
+
 >[!TIP]
 >***Tudo precisa de IP para se comunicar***.
 
 
-
+---
 >[!NOTE]
 > ## CLASSES IP
 > 
@@ -165,9 +178,12 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 > R = Rede, quantas redes
 > H = Host, quantas máquinas dentro da rede
 
+---
 
 >[!IMPORTANT]
 > Na rede local o IP fica sem classe, ou seja não roteavel.
+
+---
 
 >[!TIP]
 > **Roteador**: gerencia os IP não roteável
@@ -182,6 +198,7 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 > **Network Number**: Identifica a rede, é o 0-255 dos hosts na máscara da rede
 > **Endereço Broadcast**: Comunica todos os hosts da rede pois representa todos os endereços da rede. Exemplo: 200.100.10.255
 
+---
 
 > [!IMPORTANT]  
 > Exemplos
@@ -190,6 +207,7 @@ Topologia lógica é quem organiza, sem considerar a parte física. Quando não 
 >- **Gateway End. Rede** ->122.0.0.1
 >- **Gateway End. Broadcast** -> 122.255.255.254
 
+---
 
 >[!NOTE] 
 >OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
