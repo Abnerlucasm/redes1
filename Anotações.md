@@ -44,7 +44,8 @@ Informar como está o rack na sala de equipamentos
 # **RESUMO PROVA**
 
 
-> [!NOTE] ## Tipos de Rede
+> [!NOTE]
+>  ## Tipos de Rede
 **San** = rede de armazenamento
 **Pan** = rede pessoal, interliga sem fio os dispositivos na rede em uma curta distancia
 **Wan** = rede geral, pais, continentes...
@@ -52,21 +53,25 @@ Informar como está o rack na sala de equipamentos
 **Lan** = rede local
 
 
->[!NOTE] ## Comutações
+>[!NOTE] 
+>## Comutações
 > - **Comutação de circuitos**: é necessário estabelecer uma conexão do inicio ao fim antes de enviar a informação, como é feito nos telefones residenciais.
 >
 >- **Comutação de pacotes**: é dividido a mensagem em pacotes menores e enviada por diversos caminhos diferentes
 
 
-> [!NOTE] ## Linhas de Comunicação
+> [!NOTE]
+>  ## Linhas de Comunicação
 >- Simplex = a comunicação é feita somente por um lado da estação
 >- Half-duplex= a comunicação é feita dos dois sentidos, mas um de cada vez
 >- Full-duplex= a comunicação é feita nos dois sentidos ao mesmo tempo
 
-> [!WARNING] **Comunicação/enlance = nó (recebe/envia)**
+> [!WARNING]
+>  **Comunicação/enlance = nó (recebe/envia)**
 
 
->[!TIP] ## Topologias
+>[!TIP] 
+>## Topologias
 >- **Anel**: todas as estações estão conectadas em um caminho fechado. 
 > - **Barramento**: as estações são conectadas em t por um caminho fechado.
 Topologia lógica é quem organiza, sem considerar a parte física. Quando não há login, ou seja, ninguem é cliente ou servidor a topologia é barramento.
@@ -125,18 +130,19 @@ Algoritmos de roteamento:
 Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso 
 
 
-## IP
+>[!NOTE]
+>## IP
+>
+>**IPV4:** Identidade da máquina na rede, composto por 4 octetos (binário) mas visualmente assume outra máscara.
+>Binário: 0-255 ou seja 256 possibilidades.
+>Exemplo de IP em binário `--------.--------.--------.--------`
+>
+>**Host:** Equipamento que possui endereço IP (endereçamento)
+>
+>Existe diferença entre IP Externo (177.43.22.209) e IP Local (192.168.0.1), externo é a forma como outras redes vão visualizar as requisições. Interno é utilizado para se comunicar na rede LAN e não fica visível na rede externa. Quando o IP local faz uma requisição na WAN a mesma é feita em cima do IP Externo.
 
-**IPV4:** Identidade da máquina na rede, composto por 4 octetos (binário) mas visualmente assume outra máscara.
-Binário: 0-255 ou seja 256 possibilidades.
-Exemplo de IP em binário `--------.--------.--------.--------`
-
-**Host:** Equipamento que possui endereço IP (endereçamento)
-
-Existe diferença entre IP Externo (177.43.22.209) e IP Local (192.168.0.1), externo é a forma como outras redes vão visualizar as requisições. Interno é utilizado para se comunicar na rede LAN e não fica visível na rede externa. Quando o IP local faz uma requisição na WAN a mesma é feita em cima do IP Externo.
-
-Tudo precisa de IP para se comunicar.
-
+>[!TIP]
+>*Tudo precisa de IP para se comunicar*.
 
 
 
@@ -157,7 +163,8 @@ Tudo precisa de IP para se comunicar.
 > H = Host, quantas máquinas dentro da rede
 
 
->[!IMPORTANT] Na rede local o IP fica sem classe, ou seja não roteavel.
+>[!IMPORTANT]
+> Na rede local o IP fica sem classe, ou seja não roteavel.
 
 >[!TIP]
 > **Roteador**: gerencia os IP não roteável
@@ -173,13 +180,15 @@ Tudo precisa de IP para se comunicar.
 > **Endereço Broadcast**: Comunica todos os hosts da rede pois representa todos os endereços da rede. Exemplo: 200.100.10.255
 
 
-> [!IMPORTANT]  Exemplos
+> [!IMPORTANT]  
+> Exemplos
 >- **Endereço de Rede** -> 122.0.0.0
 >- **Endereço Broadcast** -> 122.255.255.255
 >- **Gateway End. Rede** ->122.0.0.1
 >- **Gateway End. Broadcast** -> 122.255.255.254
 
 
->[!NOTE] OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
+>[!NOTE] 
+>OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
 >
 	
