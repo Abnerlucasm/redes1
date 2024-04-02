@@ -8,49 +8,6 @@ Professor:
 Categoria:
   - Exercicios
 sticker: emoji//1f4c4
-fields:
-  - name: Tags
-    type: Cycle
-    options:
-      sourceType: ValuesList
-      valuesList: {}
-    path: ""
-    id: ouemxX
-  - name: Data
-    type: Date
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DD
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: JPgccf
-  - name: Disciplina
-    type: Input
-    options: {}
-    path: ""
-    id: KHp3Np
-  - name: Professor
-    type: Input
-    options: {}
-    path: ""
-    id: GHrCXK
-version: "2.10"
-limit: 20
-icon: package
-tagNames:
-  - redes1
-filesPaths: 
-bookmarksGroups: 
-excludes: 
-extends: 
-savedViews: []
-favoriteView: 
-fieldsOrder:
-  - KHp3Np
-  - GHrCXK
-  - JPgccf
-  - ouemxX
 ---
 # Anotações Aula 01 27-02-24
 
@@ -87,7 +44,7 @@ Informar como está o rack na sala de equipamentos
 # **RESUMO PROVA**
 
 
-> [!info] ## Tipos de Rede
+> [!NOTE] ## Tipos de Rede
 **San** = rede de armazenamento
 **Pan** = rede pessoal, interliga sem fio os dispositivos na rede em uma curta distancia
 **Wan** = rede geral, pais, continentes...
@@ -95,21 +52,21 @@ Informar como está o rack na sala de equipamentos
 **Lan** = rede local
 
 
->[!info] ## Comutações
+>[!NOTE] ## Comutações
 > - **Comutação de circuitos**: é necessário estabelecer uma conexão do inicio ao fim antes de enviar a informação, como é feito nos telefones residenciais.
 >
 >- **Comutação de pacotes**: é dividido a mensagem em pacotes menores e enviada por diversos caminhos diferentes
 
 
-> [!info] ## Linhas de Comunicação
+> [!NOTE] ## Linhas de Comunicação
 >- Simplex = a comunicação é feita somente por um lado da estação
 >- Half-duplex= a comunicação é feita dos dois sentidos, mas um de cada vez
 >- Full-duplex= a comunicação é feita nos dois sentidos ao mesmo tempo
 
-> [!question] **Comunicação/enlance = nó (recebe/envia)**
+> [!WARNING] **Comunicação/enlance = nó (recebe/envia)**
 
 
->[!tip] ## Topologias
+>[!TIP] ## Topologias
 >- **Anel**: todas as estações estão conectadas em um caminho fechado. 
 > - **Barramento**: as estações são conectadas em t por um caminho fechado.
 Topologia lógica é quem organiza, sem considerar a parte física. Quando não há login, ou seja, ninguem é cliente ou servidor a topologia é barramento.
@@ -172,7 +129,7 @@ Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso
 
 **IPV4:** Identidade da máquina na rede, composto por 4 octetos (binário) mas visualmente assume outra máscara.
 Binário: 0-255 ou seja 256 possibilidades.
-Exemplo de IP em binário --------.--------.--------.--------
+Exemplo de IP em binário `--------.--------.--------.--------`
 
 **Host:** Equipamento que possui endereço IP (endereçamento)
 
@@ -183,10 +140,11 @@ Tudo precisa de IP para se comunicar.
 
 
 
->[!info] ## CLASSES IP
+>[!NOTE]
+> ## CLASSES IP
 > 
 > **ID Rede |  ID Host**
-192     .  168     [...]
+`192     .  168     [...]`
 > ---
 >
 >**Classe A**: R (126). H (256). H (256). H (256) = **001-126** = 16,77 (256 H x 256 H x 256 H - 1 R) milhões de máquinas na rede
@@ -198,10 +156,10 @@ Tudo precisa de IP para se comunicar.
 > R = Rede, quantas redes
 > H = Host, quantas máquinas dentro da rede
 >
->>[!example] Na rede local o IP fica sem classe, ou seja não roteavel.
+>>[!IMPORTANT] Na rede local o IP fica sem classe, ou seja não roteavel.
 >
 > ---
-> >[!tip]
+> >[!TIP]
 >> **Roteador**: gerencia os IP não roteável
 >> **Roteador de Borda**: gerencia os IP Roteáveis na rede WAN, dita as rotas na rede
 >> **Roteamento NAT**: converte o IP não roteavel para roteavel, ou seja o roteador passa a visualizar os IP da rede interna e encaminha a requisição da rede interna para a rede externa.
@@ -214,12 +172,14 @@ Tudo precisa de IP para se comunicar.
 >> **Network Number**: Identifica a rede, é o 0-255 dos hosts na máscara da rede
 >> **Endereço Broadcast**: Comunica todos os hosts da rede pois representa todos os endereços da rede. Exemplo: 200.100.10.255
 >> ---
->>> [!example] Exemplos
+>>> [!IMPORTANT] 
+>>> Exemplos
 >>>- **Endereço de Rede** -> 122.0.0.0
 >>>- **Endereço Broadcast** -> 122.255.255.255
 >>>- **Gateway End. Rede** ->122.0.0.1
 >>>- **Gateway End. Broadcast** -> 122.255.255.254
 > ---
->>[!INFO] OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
+>>[!NOTE]
+>> OBS: Os hosts 0 e 255 são reservados, sendo o 0 para a rede e o 255 para o broadcast, não sendo possível hostear máquinas com IPs nessa numeração.
 >
 	
