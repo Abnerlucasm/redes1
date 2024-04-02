@@ -76,58 +76,61 @@ Informar como está o rack na sala de equipamentos
 > - **Barramento**: as estações são conectadas em t por um caminho fechado.
 Topologia lógica é quem organiza, sem considerar a parte física. Quando não há login, ou seja, ninguem é cliente ou servidor a topologia é barramento.
 
-## MEIOS DE TRANSMISSÂO
-
-**Placa de Rede =** interface entre o computador e o cabo da rede
-
-**Cabo Coaxial** = o cabo coaxial utilizado em sistemas de antena de TV ; topologia de barramento ; mais utilizado no passado
-
-**Par Trançado =** desenvolvido para ser utilizado em linhas telefonicas de forma analógica ; vantagem: flexivel, taxa de transmissao alta. Utilizado em cabos de internet. Possui categorizações: CAT de 1 a 8, alterando a taxa de transferencia de dados
-
-**Tipos de Crimpagem Cabo Trançado:** T 568 A e T 568 B (validados pela TIA/EIA)
-
-**Cabo Crossover:** cabo cruzado, permite conexão entre 2 computadores sem hub ou switch
-
-**Equipamentos Cabo Trançado:** Desencapador de cabos, Testador de Cabo, Alicate de Crimpagem, Alicate de push down
-
-**Fibra Optica Estrutura:** Capa Protetora > Casca > Núcleo
-
-**Tipo Fibra Degrau Abrupta:** atende curtas distâncias, mais facil de construir e mais barato (emissores e cabo). é refletido dentro do cabo em V
-
-**Tipo Fibra Indice Gradual:** complexidade media de fabricacao, não possui refração constante, mas se expande do eixo até as bordas
-
-**Tipo de Fibra Monomodo:** alta complexidade de manipulalçao, nucleo finissimo, média e longa distância.
-
-### **VANTAGENS X DESVANTAGENS**
-#### Vantagens
-• Velocidade
-• Isolamento elétrico
-• O cabo pode ser longo
-• Alta taxa de transferência
-#### Desvantagens
-• Muito caro
-• Difícil de instalar
-• Quebra com facilidade
-• Difícil de ser remendado
+> [!NOTE]
+>  ## MEIOS DE TRANSMISSÂO
+>
+>**Placa de Rede =** interface entre o computador e o cabo da rede
+>
+>**Cabo Coaxial** = o cabo coaxial utilizado em sistemas de antena de TV ; topologia de barramento ; mais utilizado no passado
+>
+>**Par Trançado =** desenvolvido para ser utilizado em linhas telefonicas de forma analógica ; vantagem: flexivel, taxa de transmissao alta. Utilizado em cabos de internet. Possui categorizações: CAT de 1 a 8, alterando a taxa de transferencia de dados
+>
+>**Tipos de Crimpagem Cabo Trançado:** T 568 A e T 568 B (validados pela TIA/EIA)
+>
+>**Cabo Crossover:** cabo cruzado, permite conexão entre 2 computadores sem hub ou switch
+>
+>**Equipamentos Cabo Trançado:** Desencapador de cabos, Testador de Cabo, Alicate de Crimpagem, Alicate de push down
+>
+>**Fibra Optica Estrutura:** Capa Protetora > Casca > Núcleo
+>
+>**Tipo Fibra Degrau Abrupta:** atende curtas distâncias, mais facil de construir e mais barato (emissores e cabo). é refletido dentro do cabo em V
+>
+>**Tipo Fibra Indice Gradual:** complexidade media de fabricacao, não possui refração constante, mas se expande do eixo até as bordas
+>
+>**Tipo de Fibra Monomodo:** alta complexidade de manipulalçao, nucleo finissimo, média e longa distância.
+>
 
 
-**HUB  =** repetidor, ponto de conexão fisica dos equipamentos da rede, retransmite o que recebe aos disp. Conectados a ele, espelho,
+>[!NOTE]
+>### **VANTAGENS X DESVANTAGENS**
+> #### Vantagens
+>• Velocidade
+>• Isolamento elétrico
+>• O cabo pode ser longo
+>• Alta taxa de transferência
+>
+>#### Desvantagens
+>• Muito caro
+>• Difícil de instalar
+>• Quebra com facilidade
+>• Difícil de ser remendado
 
-**SWITCH=** permitem o modo full duplex, fecha o canal de comnicação entre dois dispositivos, podendo esses se comunicarem simultaneamente. Antes do switch era utiizado cabo crossover ou a porta up link do hub. É possivel interligar varios switchs desde que esteja conectados em um central
 
-
-**Bridges:**
-Interliga dois segmentos de rede tornando os unicos. EM redes antigas era utilizado a bridge para dividir a rede em menores segmentos aumentando o desempenho da rede.
-
-**Roteadores:**
-Interliga varias redes diferentes e encontra a melhor e mais rapida rota, nivel 3 modelo OSI
-
-Algoritmos de roteamento:
-
-
-
-**Hierarquia**
-Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso 
+>[!IMPORTANT]
+>**HUB  =** repetidor, ponto de conexão fisica dos equipamentos da rede, retransmite o que recebe aos disp. Conectados a ele, espelho,
+>
+>**SWITCH=** permitem o modo full duplex, fecha o canal de comnicação entre dois dispositivos, podendo esses se comunicarem simultaneamente. Antes do switch era utiizado cabo crossover ou a porta up link do hub. É possivel interligar varios switchs desde que esteja conectados em um central
+>
+>**Bridges:**
+>Interliga dois segmentos de rede tornando os unicos. EM redes antigas era utilizado a bridge para dividir a rede em menores segmentos aumentando o desempenho da rede.
+>
+>**Roteadores:**
+>Interliga varias redes diferentes e encontra a melhor e mais rapida rota, nivel 3 modelo OSI
+>
+>Algoritmos de roteamento:
+>
+>**Hierarquia**
+>Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso 
 
 
 >[!NOTE]
@@ -142,7 +145,7 @@ Core (nucleo) > Distrubuição (Roteamento entre vlan) > Acesso
 >Existe diferença entre IP Externo (177.43.22.209) e IP Local (192.168.0.1), externo é a forma como outras redes vão visualizar as requisições. Interno é utilizado para se comunicar na rede LAN e não fica visível na rede externa. Quando o IP local faz uma requisição na WAN a mesma é feita em cima do IP Externo.
 
 >[!TIP]
->*Tudo precisa de IP para se comunicar*.
+>***Tudo precisa de IP para se comunicar***.
 
 
 
