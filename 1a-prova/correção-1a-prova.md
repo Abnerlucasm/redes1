@@ -27,7 +27,7 @@ R: As duas são topologias estrela, pois, na topologia fisica há switchs que co
 - 1 CT (Bandeja)
 - 1 Provedor
 
-7)
+7) 
 
 8)
 
