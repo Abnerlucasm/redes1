@@ -100,7 +100,7 @@ X = 255
 
 
 15 hosts
-
+Quantos bits vou usar = 4 = 2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
 ___
 ### Exemplos de Sub redes
 ##### Rede comum, sem sub-rede
@@ -136,4 +136,3 @@ ___
 |    Rede 6 | 255  | 255  |  0   |    160     |    191    |
 |    Rede 7 | 255  | 255  |  0   |    192     |    223    |
 |    Rede 8 | 255  | 255  |  0   |    224     |    255    |
-Quantos bits vou usar = 4 = 2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
