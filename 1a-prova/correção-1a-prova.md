@@ -20,12 +20,12 @@ R: As duas são topologias estrela, pois, na topologia fisica há switchs que co
 - e)
 
 6)
-1 Bracket 12 ou 15 Us
-3 SW
-3 PP
-3 GC
-1 CT (Bandeja)
-1 Provedor
+- 1 Bracket 12 ou 15 Us
+- 3 SW
+- 3 PP
+- 3 GC
+- 1 CT (Bandeja)
+- 1 Provedor
 
 7)
 
