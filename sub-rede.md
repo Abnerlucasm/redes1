@@ -92,22 +92,15 @@ HOSTS
                 |---------|  |----------------|
 
 bits                
-                R    R   X   X   X   X   X   X
-máscara             -    -   -   -   -   -   -   -
-possibilidades    128  64  32  16  8   4   2   1   =
+               | R | R | X | X | X | X | X | X |
+máscara        | - | - | - | - | - | - | - | - |
+possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  =
 X = 255
 
 
 
 15 hosts
 Quantos bits vou usar = 4 = 2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
-
----
-
-# Calculadora de Sub Redes
-
-<iframe src="https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html" height="400px" width="600px" allowfullscreen></iframe>
-___
 
 
 ### Exemplos de Sub redes
@@ -144,3 +137,14 @@ ___
 |    Rede 6 | 255  | 255  |  0   |    160     |    191    |
 |    Rede 7 | 255  | 255  |  0   |    192     |    223    |
 |    Rede 8 | 255  | 255  |  0   |    224     |    255    |
+
+
+
+---
+
+# Calculadora de Sub Redes
+
+[Acesse aqui](https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html)
+
+
+___
