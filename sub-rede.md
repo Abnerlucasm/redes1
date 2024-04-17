@@ -106,7 +106,7 @@ Quantos bits vou usar = 4 = 2 elevado na 4 = 16-2 = 4, seria necessário usar 5 
 
 # Calculadora de Sub Redes
 
-<iframe src="https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+<iframe src="https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html" height="400px" width="600px" allowfullscreen></iframe>
 ___
 
 
