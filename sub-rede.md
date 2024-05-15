@@ -102,7 +102,7 @@ X = 255
 Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
 
 # Como calcular?
-## Descobrir quantos bits necessários para descobrir a quantidade de Hosts.
+## 1) Descobrir quantos bits necessários para descobrir a quantidade de Hosts.
 QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL  |
 | :---       | :---: |            ---:       |           :---:           |  ---:  |
 1            |  2¹   |       2               |            2              |        |
