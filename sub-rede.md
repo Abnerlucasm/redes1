@@ -156,7 +156,7 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 # Conceitos
 
 - **BIT**: Possui 2 valores. (0 e 1)
-- **BYTE**: Possui 8 casas com 32 possibilidades cada, totalizando 256 possibilidades
+- **BYTE**: Possui 8 casas/bits com 32 possibilidades cada(bit), totalizando 256 possibilidades.
 
 
 ---
