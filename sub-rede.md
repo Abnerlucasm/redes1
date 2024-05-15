@@ -140,6 +140,13 @@ Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 
 
 
 ---
+# Conceitos
+
+- **BIT**: Possui 2 valores. (0 e 1)
+- **BYTE**: Possui 8 casas com 32 possibilidades cada, totalizando 256 possibilidades
+
+
+---
 
 # Calculadora de Sub Redes
 
