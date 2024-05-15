@@ -81,7 +81,7 @@ Rede C
 ________
 
 
-Máscara = da esquerda para a direita
+- Máscara = da esquerda para a direita
 ________
 
 
@@ -91,7 +91,7 @@ HOSTS
                 |---------|  |----------------|
 
 bits                
-               | R | R | X | X | X | X | X | X |
+               | R | R | H | H | H | H | H | H |
 máscara        | - | - | - | - | - | - | - | - |
 possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  =
 X = 255
@@ -99,7 +99,7 @@ X = 255
 
 
 15 hosts
-Quantos bits vou usar = 4 = 2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
+Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
 
 
 ### Exemplos de Sub redes
