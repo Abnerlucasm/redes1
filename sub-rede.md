@@ -97,7 +97,8 @@ ________
 - Máscara = da esquerda para a direita
 ________
 
-
+> [!NOTE]
+> Ajustar formatação no markdown
 
 HOSTS
                   Rede             Hosts
@@ -110,9 +111,13 @@ possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  =
 X = 255
 
 
+> [!NOTE]
+> Ajustar formatação no markdown
 
 15 hosts
 Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 5 bits
+
+---
 
 # Como calcular?
 ## 1) Descobrir quantos bits necessários para descobrir a quantidade de Hosts.
@@ -127,6 +132,7 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 1            |  2⁷   |       128             |            2              |  126   | 
 1            |  2⁸   |       256             |            2              |  254   |
 
+---
 
 ### Exemplos de Sub redes
 ##### Rede comum, sem sub-rede
