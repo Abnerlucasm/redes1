@@ -103,16 +103,16 @@ Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 
 
 # Como calcular?
 ## Descobrir quantos bits necessários para descobrir a quantidade de Hosts.
-QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |
-| :---       | :---: |            ---:       |
-1            |  2¹   |       2               |
-1            |  2²   |       4               |
-1            |  2³   |       8               |
-1            |  2⁴   |       16              |
-1            |  2⁵   |       32              | 
-1            |  2⁶   |       64              |
-1            |  2⁷   |       128             | 
-1            |  2⁸   |       256             |
+QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL  |
+| :---       | :---: |            ---:       |           :---:           |  ---:  |
+1            |  2¹   |       2               |            2              |        |
+1            |  2²   |       4               |            2              |        |
+1            |  2³   |       8               |            2              |        |
+1            |  2⁴   |       16              |            2              |        |
+1            |  2⁵   |       32              |            2              |        | 
+1            |  2⁶   |       64              |            2              |  [...] |
+1            |  2⁷   |       128             |            2              |  126   | 
+1            |  2⁸   |       256             |            2              |  254   |
 
 
 ### Exemplos de Sub redes
