@@ -15,12 +15,16 @@ representa que há duas redes.
 - As sub redes são em multiplos de 2
 
 
+> [!NOTE]
+> Ajustar formatação no markdown
+
 Quando pega 2 bits = 4 sub redes
 4 combinações = 
 00 - 0x128+0x64 = 0
 01 = 64
 10 = 128
 11 = 192
+
 
 Sub rede 1
 0.0.1.1.1.1.1
@@ -35,6 +39,10 @@ Sub rede 4
 1.1.1.1.1.1.1
 
 ___
+
+> [!NOTE]
+> Ajustar formatação no markdown
+
 representações de 2 bits = 4 sub redes
 bits            ¹    ²
 máscara             -    -   -   -   -   -   -   -
@@ -53,6 +61,8 @@ possibilidades    128  64  32  16  8   4   2   1   =
 1     |     1 1    |                     |
 
 
+> [!NOTE]
+> Ajustar formatação no markdown
 
 3 bits
 
@@ -72,6 +82,9 @@ Perde 16 endereços
 
 
 _______
+
+> [!NOTE]
+> Ajustar formatação no markdown
 
 Rede C
 256 possibilidades, 254 hosts = 1 sub rede
