@@ -1,19 +1,50 @@
 # Observações
-- Cada rede tem o seu próprio broadcast
+Sub rede serve para separar as máquinas na rede, com máscaras diferentes. (setores por exemplo)
 
-- Quando houver uma sub rede o bit de 255(256-1) será divido no final da máscara, exemplo: 2 sub redes: 255.255.255.128 (representando em 256 bits = binário(1 binário = 256 bits)), 
-representa que há duas redes.
+- Cada sub rede tem o seu próprio broadcast e gateway, ou seja, de todos os ip's que o alcance (range) da sub rede tem, 2 sempre serão reservados a essa função, por exemplo, se dividirmos a rede em 2 sub redes com 128 ip's cada uma, teremos de subtrair 2 ip's para broadcast e gateway, sobrando 126 ip's para serem distribuídos entre os host's;
 
-- Cada bit da máscara representa 2 sub rede
+- Para criar uma sub rede, é necessário usar bits do octeto dos host's para fazer a divisão das redes;
 
-- Sub rede serve para separar as máquinas na rede, com máscaras diferentes. (setores por exemplo)
+- A sub rede pode dividir uma rede para não ser necessário usar todos os ips(hosts) disponíveis da mesma. Sendo possível usar somente o necessário;
 
-- A sub rede pode dividir uma rede para não ser necessário usar todos os ips(hosts) disponíveis da mesma. Sendo possível usar somente o necessário.
+- As sub redes são em múltiplos de 2;
 
-- Nova sub rede sempre vai ter um novo broadcast e gateway, ou seja, perde sempre 2 possibilidades. (256 - 2)
+- Recapitulando a divisão dos octetos em uma rede ipv4 de classe C temos:
 
-- As sub redes são em multiplos de 2
+| Rede | Rede | Rede | Host |
+| ---- | ---- | ---- | ---- |
+| 255  | 255  | 255  | 0    |
+Em binário:
 
+| Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Host (Octe. 4)  |
+| :-------------: | :-------------: | :-------------: | :-------------: |
+| 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 0.0.0.0.0.0.0.0 |
+Isso é um exemplo de uma rede sem sub redes, o ultimo octeto é totalmente dedicado a ser distribuído entre os host's que conectarem nessa rede.
+
+Um exemplo de uma rede dividida em duas sub redes fica:
+
+| Rede | Rede | Rede | Host |
+| ---- | ---- | ---- | ---- |
+| 255  | 255  | 255  | 128  |
+Em binário:
+
+| Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Sub rede/Host (Octe. 4) |
+| :-------------: | :-------------: | :-------------: | :---------------------: |
+| 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 |     1.0.0.0.0.0.0.0     |
+Isso significa que os ip's em que o ultimo octeto fique entre os valores 0 e 127 (0.0.0.0.0.0.0.0 a 0.1.1.1.1.1.1.1) pertencem a primeira sub rede, já os ip's que fiquem entre os valores 128 e 255 (1.0.0.0.0.0.0.0 a 1.1.1.1.1.1.1.1) fazem parte da segunda sub rede.
+
+- Cada bit da máscara representa 2 sub rede, por exemplo:
+
+|       IP        | Quantidades de IP's por rede | IP's disponiveis | Mascara | Bits alocados a sub rede |
+| :-------------: | :--------------------------: | :--------------: | :-----: | :----------------------: |
+|  255.255.255.0  |             256              |       254        |   /24   |            1             |
+| 255.255.255.128 |             128              |       126        |   /25   |            2             |
+| 255.255.255.64  |              64              |        62        |   /26   |            3             |
+| 255.255.255.32  |              32              |        30        |   /27   |            4             |
+| 255.255.255.16  |              16              |        14        |   /28   |            5             |
+|  255.255.255.8  |              8               |        6         |   /29   |            6             |
+|  255.255.255.4  |              4               |        2         |   /30   |            7             |
+|  255.255.255.2  |              2               |        0         |   /31   |            8             |
 
 > [!NOTE]
 > Ajustar formatação no markdown
