@@ -14,11 +14,13 @@ Sub rede serve para separar as máquinas na rede, com máscaras diferentes. (set
 | Rede | Rede | Rede | Host |
 | ---- | ---- | ---- | ---- |
 | 255  | 255  | 255  | 0    |
+
 Em binário:
 
 | Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Host (Octe. 4)  |
 | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 0.0.0.0.0.0.0.0 |
+
 Isso é um exemplo de uma rede sem sub redes, o ultimo octeto é totalmente dedicado a ser distribuído entre os host's que conectarem nessa rede.
 
 Um exemplo de uma rede dividida em duas sub redes fica:
@@ -26,11 +28,13 @@ Um exemplo de uma rede dividida em duas sub redes fica:
 | Rede | Rede | Rede | Host |
 | ---- | ---- | ---- | ---- |
 | 255  | 255  | 255  | 128  |
+
 Em binário:
 
 | Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Sub rede/Host (Octe. 4) |
 | :-------------: | :-------------: | :-------------: | :---------------------: |
 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 | 1.1.1.1.1.1.1.1 |     1.0.0.0.0.0.0.0     |
+
 Isso significa que os ip's em que o ultimo octeto fique entre os valores 0 e 127 (0.0.0.0.0.0.0.0 a 0.1.1.1.1.1.1.1) pertencem a primeira sub rede, já os ip's que fiquem entre os valores 128 e 255 (1.0.0.0.0.0.0.0 a 1.1.1.1.1.1.1.1) fazem parte da segunda sub rede.
 
 - Cada bit da máscara representa 2 sub rede, por exemplo:
