@@ -91,11 +91,10 @@ HOSTS
                   Rede             Hosts
                 |---------|  |----------------|
 
-bits                
+bits           | REDE  |       HOSTS           |
                | R | R | X | X | X | X | X | X |
 máscara        | - | - | - | - | - | - | - | - |
-possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  =
-X = 255
+possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  = X = 255
 
 
 
