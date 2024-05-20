@@ -62,17 +62,13 @@ Quando pega 2 bits = 4 sub redes
 11 = 192
 
 
-Sub rede 1
-0.0.1.1.1.1.1
+| Descrição       | Combinação     |
+| :-------------: |:-------------: |
+| Sub rede 1      |  0.0.1.1.1.1.1 |
+| Sub rede 2      |  0.1.1.1.1.1.1 |
+| Sub rede 3      |  1.0.1.1.1.1.1 |
+| Sub rede 4      |  1.1.1.1.1.1.1 |
 
-Sub rede 2
-0.1.1.1.1.1.1
-
-Sub rede 3
-1.0.1.1.1.1.1
-
-Sub rede 4
-1.1.1.1.1.1.1
 
 ___
 
@@ -87,14 +83,14 @@ possibilidades    128  64  32  16  8   4   2   1   =
 
 | BIT | COMBINAÇÃO | REGRA DE COMBINAÇÃO |
 | :---|  :---:     |  ---:               |
-0     |     0 0    |    (00 = 0)         |
-0     |     0 1    |    (01 = 64)        |
-0     |     1 0    |    (10 = 128)       |
-0     |     1 1    |    (11 = 192)       |
-1     |     0 0    |                     |
-1     |     0 1    |                     |
-1     |     1 0    |                     |
-1     |     1 1    |                     |
+|0    |     0 0    |    (00 = 0)         |
+|0    |     0 1    |    (01 = 64)        |
+|0    |     1 0    |    (10 = 128)       |
+|0    |     1 1    |    (11 = 192)       |
+|1    |     0 0    |                     |
+|1    |     0 1    |                     |
+|1    |     1 0    |                     |
+|1    |     1 1    |                     |
 
 
 > [!NOTE]
@@ -136,16 +132,12 @@ ________
 > [!NOTE]
 > Ajustar formatação no markdown
 
-HOSTS
-                  Rede             Hosts
-                |---------|  |----------------|
-
-bits           | REDE  |       HOSTS           |
-               | R | R | X | X | X | X | X | X |
-bits                
-               | R | R | H | H | H | H | H | H |
-máscara        | - | - | - | - | - | - | - | - |
-possibilidades |128| 64| 32| 16| 8 | 4 | 2 | 1 |  = X = 255
+- HOSTS
+|  Rede     |      Hosts            |  Total |
+|:--------- | :--------------------:| ----:  |
+|  R    R   | H  |  H |  H  | H |  H |  H |        |        
+|  -    -   | -  | -  | -  | -  | -  | - |        |
+| 128   64  | 32 | 16 | 8 |  4  | 2  | 1 | = 255  |
 
 
 > [!NOTE]
@@ -156,8 +148,8 @@ Quantos bits vou usar = 4 ->  2 elevado na 4 = 16-2 = 4, seria necessário usar 
 
 ---
 
-# Como calcular?
-## 1) Descobrir quantos bits necessários para descobrir a quantidade de Hosts.
+# Como calcular
+## 1) Quantos bits são necessários para descobrir a quantidade de Hosts?
 QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL  |
 | :---       | :---: |            ---:       |           :---:           |  ---:  |
 1            |  2¹   |       2               |            2              |        |
