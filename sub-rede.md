@@ -1,3 +1,15 @@
+# Índice
+
+- [Observações](#observações)
+- [Como calcular](#como-calcular)
+- [Conceitos](#conceitos)
+- [Calculadora de Sub Redes](#calculadora-de-sub-redes)
+- [Exemplos](#exemplos)
+
+
+---
+
+
 # Observações
 Sub rede serve para separar as máquinas na rede, com máscaras diferentes. (setores por exemplo)
 
