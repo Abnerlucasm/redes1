@@ -173,6 +173,27 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 1            |  2⁷   |       128             |            2              |  126   | 
 1            |  2⁸   |       256             |            2              |  254   |
 
+## 2) Passo a passo para calcular a máscara de sub-rede para /24:
+
+### 1 . **Entenda a notação CIDR:** 
+- /24 significa que a máscara de sub-rede tem 24 bits definidos como 1.
+
+### 2 . **Escreva a máscara de sub-rede em binário:**
+- /24 em binário é: 11111111.11111111.11111111.00000000
+
+### 3 . **Converta a máscara de sub-rede para decimal:**
+- O número binário 11111111 corresponde ao número decimal 255.
+
+- Assim, a máscara de sub-rede para /24 é: 255.255.255.0
+Portanto, a máscara de sub-rede para uma notação /24 é 255.255.255.0.
+
+### Exemplos adicionais:
+- /25: 11111111.11111111.11111111.10000000 -> 255.255.255.128
+- /26: 11111111.11111111.11111111.11000000 -> 255.255.255.192
+- /27: 11111111.11111111.11111111.11100000 -> 255.255.255.224
+  
+Cada bit adicional usado para a máscara de sub-rede reduz o número de endereços IP disponíveis para hosts na sub-rede. Para /24, há 256 endereços IP possíveis, dos quais 254 podem ser atribuídos a hosts (os outros dois são usados para o endereço de rede e o endereço de broadcast).
+
 ---
 
 ### Exemplos de Sub redes
