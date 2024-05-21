@@ -218,10 +218,13 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 - **BIT**: Possui 2 valores. (0 e 1)
 - **BYTE**: Possui 8 casas/bits com 32 possibilidades cada(bit), totalizando 256 possibilidades.
 - **FTP**: File Transfer Protocol, protocolo para transferência de arquivos da rede local para a rede externa
-- **DNS**: Armazena o endereço de texto do IP. Exemplo: www.google.com/ (173.194.219.94)
-- **GATEWAY**:
-- **DHCP**:
-- **BROADCAST**:
+- **DNS**: Armazena o endereço de texto do IP. Exemplo: www.google.com (173.194.219.94)
+- **GATEWAY**: IP reservado para comunicação.
+- - **Exemplo**: Em uma rede com IP 192.168.1.0, o gateway pode ser 192.168.1.1.
+- **DHCP**: Atribui IPs automaticamente.
+- - **Exemplo**: Um roteador configura os dispositivos na rede com IPs 192.168.1.2, 192.168.1.3, etc.
+- **BROADCAST**: Comunicação para todos dispositivos.
+- - **Exemplo**: Enviar um pacote para 192.168.1.255 atinge todos os dispositivos na rede 192.168.1.0/24.
 ---
 
 # Calculadora de Sub Redes
