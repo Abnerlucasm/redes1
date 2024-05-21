@@ -205,8 +205,11 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 
 - **BIT**: Possui 2 valores. (0 e 1)
 - **BYTE**: Possui 8 casas/bits com 32 possibilidades cada(bit), totalizando 256 possibilidades.
-
-
+- **FTP**: File Transfer Protocol, protocolo para transferência de arquivos da rede local para a rede externa
+- **DNS**: Armazena o endereço de texto do IP. Exemplo: www.google.com/ (173.194.219.94)
+- **GATEWAY**:
+- **DHCP**:
+- **BROADCAST**:
 ---
 
 # Calculadora de Sub Redes
