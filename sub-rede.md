@@ -29,10 +29,6 @@ Um exemplo de uma rede dividida em duas sub redes fica:
 | ---- | ---- | ---- | ---- |
 | 255  | 255  | 255  | 128  |
 
-
-<img width="405" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/05204777-1dd5-4b26-9993-c58e8a03979e">
-
-
 Em binário:
 
 | Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Sub rede/Host (Octe. 4) |
