@@ -3,11 +3,13 @@
 ## Objetivo
 - Repositório de código aberto para compartilhar conhecimentos de Redes da matéria do curso bacharel de Sistemas de Informação
 
+---
 
 # Índice
 
+
 ## [DHCP](https://github.com/Abnerlucasm/redes1/tree/DHCP)
-- 
+
 
 ## [Sub Redes](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md)
 - [1. Observações](#observações)
