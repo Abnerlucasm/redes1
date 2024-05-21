@@ -1,10 +1,10 @@
 # Índice
 
-- [Observações](#observações)
-- [Como calcular](#como-calcular)
-- [Conceitos](#conceitos)
-- [Calculadora de Sub Redes](#calculadora-de-sub-redes)
-- [Exemplos](#exemplos)
+- [1...Observações](#observações)
+- [2...Como calcular](#como-calcular)
+- [3...Conceitos](#conceitos)
+- [4...Calculadora de Sub Redes](#calculadora-de-sub-redes)
+- [5...Exemplos](#exemplos)
 
 
 ---
