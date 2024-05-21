@@ -29,6 +29,10 @@ Um exemplo de uma rede dividida em duas sub redes fica:
 | ---- | ---- | ---- | ---- |
 | 255  | 255  | 255  | 128  |
 
+
+<img width="405" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/05204777-1dd5-4b26-9993-c58e8a03979e">
+
+
 Em binário:
 
 | Rede (Octe. 1)  | Rede (Octe. 2)  | Rede (Octe. 3)  | Sub rede/Host (Octe. 4) |
@@ -214,4 +218,62 @@ QTD SUB REDE | BIT   |  POSSIBILIDADES/HOSTS |  (-) BROADCAST E GATEWAY  | TOTAL
 [Acesse aqui](https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html)
 
 
+
+# Exemplos
+
+- **Problema:** Vamos considerar que pretendem organizar uma LAN Party e querem criar 
+6 sub-redes. Como requisito, cada uma das sub-redes deverá suportar 30 hosts 
+(máquinas). A vossa rede principal é 192.168.1.0/24 e tem suporte para 254 hosts. 
+Como proceder a essa divisão?
+
+<img width="463" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/502096da-9e83-405a-b7bc-fd37807fba2e">
+
+
+- Para começar vamos recordar quais os requisitos: 
+• Cada sub-rede deve ter suporte para pelo menos 30 hosts; 
+• No mínimo devemos ter 6 sub-redes; 
+
+Antes de proceder aos cálculos, vamos verificar se é possível satisfazer tais requisitos. 
+Ora se a minha rede principal suporta 254 máquinas então 30 (PC’s) x 6 (sub-redes) = 
+180, logo será possível satisfazer o pedido. Foi também tido em conta que serão 
+“perdidos” dois endereços por cada sub-rede: o endereço de sub-rede que identificará 
+essa sub-rede e o endereço de broadcast de casa sub-rede. 
+
+Dando prioridade à exigência a nível de PC’s, vamos considerar o diagrama seguinte e 
+responder à seguinte questão: Em que número da elipse amarela conseguiriam encaixar 
+32 PC’s (30 é o números de PCs + 1 que é o endereço para a sub-rede e +1 endereço de 
+broadcast, que dá um total de 32). Ora têm 3 possibilidades: no 128, 64 ou 32.
+
+No entanto, a escolha deverá recair sobre 32 por ser o número mais próximo (neste exemplo 
+até é igual) do solicitado.
+
+<img width="441" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/0e2578f4-e23c-4d2c-adc4-75b8a6299865">
+
+
+Sabendo que a escolha é então 32 podemos então rapidamente afirmar que as sub-rede 
+distam 32 endereços umas das outras e que podemos variar 3 bits.
+
+<img width="173" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/97bd7640-3ed8-4088-aeed-807542bf97c6">
+
+Além disso vamos também ter de alterar a mascara da rede principal e ajustar às sub
+redes. Como a máscara original é /24 (255.255.255.0) e como agora passamos a ter mais 
+sub-redes e menos endereços disponíveis por cada sub-rede, então a máscara terá de 
+avançar para a frente no último octeto. Como estamos a usar mais 3 bits do último 
+octeto, basta efectuar a soma o peso dos mesmos (128+64+32 = 224). Então a nova 
+máscara a aplicar às novas sub-redes será: 255.255.255.224 (/27).
+
+<img width="418" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/cc3991f4-51f8-45c5-95af-d28306e60500">
+
+Considerando a rede principal, após a sua divisão em sub-redes com 30 hosts cada 
+temos algo do tipo:
+
+<img width="411" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/4c82a1ac-2f35-4dd4-bfc2-1f7c2edfa426">
+
+Nesta fase já temos todas as informações para responder à pergunta inicial. Para isso 
+elaborei um pequeno quadro: 
+
+<img width="410" alt="image" src="https://github.com/Abnerlucasm/redes1/assets/101808345/1c1a86ea-fe4e-4ec0-8cdc-105a3acb5141">
+
+Como podemos verificar, o resultado foram mais de 6 sub-redes mas conseguimos 
+cumprir o requisitos de 30 hosts por rede. Das 8 redes agora basta usarem 6. 
 ___
