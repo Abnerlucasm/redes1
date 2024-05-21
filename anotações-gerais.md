@@ -31,7 +31,7 @@ sticker: emoji//1f4c4
 
 
 # OBSERVAÇÕES
-- Será utilizado máquina virtual (Win 7 Ult. 64 Bits, 50 GB Armazenamento) e path tracer.
+- Será utilizado máquina virtual (Win 7 Ult. 64 Bits, 50 GB Armazenamento) e cisco packet tracer.
 - Deve ser postado todos os projetos da aula, fecha um dia antes da aula e pode ser postado apenas por um integrante.
 
 
