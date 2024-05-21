@@ -194,6 +194,21 @@ Portanto, a máscara de sub-rede para uma notação /24 é 255.255.255.0.
   
 Cada bit adicional usado para a máscara de sub-rede reduz o número de endereços IP disponíveis para hosts na sub-rede. Para /24, há 256 endereços IP possíveis, dos quais 254 podem ser atribuídos a hosts (os outros dois são usados para o endereço de rede e o endereço de broadcast).
 
+## 3) Passo a passo para calcular a máscara de sub-rede alternativas (sem conversão de binário):
+Para sub-redes menos comuns ou diferentes, você pode usar a seguinte fórmula para calcular a máscara de sub-rede:
+
+1. **Determine quantos bits são usados para a parte do host**: Isso é feito subtraindo o número de bits da máscara de sub-rede (o número após a barra) de 32. Por exemplo, para /24: 32 - 24 = 8 bits para hosts.
+
+2. **Calcule o número de hosts possíveis**: Use a fórmula \(2^{\text{número de bits para hosts}} - 2\) para encontrar o número de hosts utilizáveis. Por exemplo, para /24: \(2^8 - 2 = 254\) hosts.
+
+3. **Use a tabela ou fórmula para converter para a máscara de sub-rede**:
+   - /24: 255.255.255.0
+   - /25: 255.255.255.128
+   - /26: 255.255.255.192
+   - /27: 255.255.255.224
+
+Essa abordagem é mais rápida e elimina a necessidade de conversão binária. Memorizar algumas das máscaras de sub-rede mais comuns e usar tabelas de referência pode simplificar muito o processo.
+
 ---
 
 ### Exemplos de Sub redes
