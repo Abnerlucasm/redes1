@@ -12,8 +12,8 @@
 
 
 ## [Sub Redes](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md)
-- [1. Observações](#observações)
-- [2. Como calcular](#como-calcular)
-- [3. Conceitos](#conceitos)
-- [4. Calculadora de Sub Redes](#calculadora-de-sub-redes)
-- [5. Exemplos](#exemplos)
+- [1. Observações](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md#observações)
+- [2. Como calcular](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md#como-calcular)
+- [3. Conceitos](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md#conceitos)
+- [4. Calculadora de Sub Redes](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md#calculadora-de-sub-redes)
+- [5. Exemplos](https://github.com/Abnerlucasm/redes1/blob/master/sub-rede.md#exemplos)
